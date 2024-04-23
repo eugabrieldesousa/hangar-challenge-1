@@ -1,5 +1,5 @@
 <?php
-require_once 'db_connection.php';
+require_once 'conexao.php';
 
 $sql = "SELECT DATE(order_date) AS dia, AVG(order_total) AS media FROM orders GROUP BY DATE(order_date)";
 $result = $conn->query($sql);
